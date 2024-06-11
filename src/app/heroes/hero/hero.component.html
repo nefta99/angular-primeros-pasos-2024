@@ -1,0 +1,26 @@
+
+
+<h1>{{this.name}}</h1>
+
+<dl>
+  <td>Nombre:  </td>
+  <dd>{{this.name}}</dd>
+
+  <td>Edad:</td>
+  <dd>{{this.age}}</dd>
+
+  <td>Método:</td>
+  <dd>{{ getHeroDescription() }}</dd>
+
+  <td>Capitalizado:</td>
+  <dd>{{capitalizeName}}</dd>
+</dl>
+
+<button class=" btn btn-primary mx-2" (click)="changeHero()">
+  Cambiar nobre
+</button>
+
+
+<button  class="btn btn-primary" (click)="changeAge()">
+  Cambiar edad
+</button>
